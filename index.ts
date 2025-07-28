@@ -1,10 +1,3 @@
-type Person{
-    name: string;
-}
-
-const person: Person = {
-    name: "John",
-}
-
-
-console.log(person.name)
+let myName: string = "Mike";
+myName = 'kate';
+console.log(myName);
