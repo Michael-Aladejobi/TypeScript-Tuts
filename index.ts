@@ -41,5 +41,56 @@
 // console.log(greet());
 // console.log(greet("Mike"));
 
+// function printMessage(message: string) : void {
+//   console.log(`This is my mesage => "${message}!"`);
+// }
+
+// printMessage("Hello There");
+
+// ARRAYS
+
+// const numbers: number[] = [1, 2, 3, 4, 5, ];
+// console.log(numbers);
+
+// const singleDi: number[] = [1, 2, 3, 4, 5];
+// const multiDi: number[][] = [[1, 2, 3, 4, 5]];
+// const tripleDi: number[][][] = [[[1, 2, 3, 4, 5]]];
+
+// console.log(singleDi);
+// console.log(multiDi);
+// console.log(tripleDi);
+
+// function printUser(): { name: string; age: number; location: string } {
+//   return {
+//     name: "mike",
+//     age: 10,
+//     location: "..bla",
+//   };
+// }
+
+// const res = printUser();
+// console.log(res);
+
+//Function
+// function printUser(name: string, age: number, location: string) {
+//   return {
+//     name,
+//     age,
+//     location,
+//   };
+// }
+
+// const res = printUser("mike", 10, "..bla");
+// console.log(res);
 
 
+
+type User = {
+  name: string;
+  age: number;
+  location: string;
+};
+
+const printUserInfo = (user: User) => {
+  return `Name: (${user.name}) Age: (${user.age}) Location: (${user.location})`;
+};
