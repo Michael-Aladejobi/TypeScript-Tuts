@@ -83,14 +83,58 @@
 // const res = printUser("mike", 10, "..bla");
 // console.log(res);
 
+// type User = {
+//   name: string;
+//   age: number;
+//   location?: string ;
+// };
 
+// const printUserInfo = (user: User) => {
+//   return `Name: (${user.name}) Age: (${user.age}) Location: (${user.location})`;
+// };
 
-type User = {
-  name: string;
+// const res = printUserInfo({ name: "mike", age: 2, location: "...blah" });
+// console.log(res);
+
+// type Person = {
+//   name: string;
+//   age: number;
+// };
+
+// type Employee = {
+//   id: number;
+//   title: string;
+// };
+
+// type PersonAndEmployee = Person & Employee;
+
+// const mike: PersonAndEmployee = {
+//   name: "mike",
+//   age: 30,
+//   id: 123,
+//   title: "...blah",
+// };
+
+// const res = mike;
+// console.log(res);
+
+let password: number | string = 10;
+
+type UserInfo = {
+  first: string;
+  last: string;
   age: number;
-  location: string;
 };
 
-const printUserInfo = (user: User) => {
-  return `Name: (${user.name}) Age: (${user.age}) Location: (${user.location})`;
+type AccountDetails = {
+  email: string;
+  password: string;
 };
+
+let user: UserInfo | AccountDetails = {
+  email: "someting@gmail.com",
+  password: "passw234",
+};
+
+const items: (number | string)[] = [1, 2, 3, 4, "hello"];
+console.log(items);
